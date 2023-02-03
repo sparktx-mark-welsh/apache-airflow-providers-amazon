@@ -76,9 +76,9 @@ class AWSDataSyncHook(AwsBaseHook):
         elif typ == "s3":
             location = self.get_conn().create_location_s3(**create_location_kwargs)
         elif typ == "nfs":
-            location = self.get_conn().create_loction_nfs(**create_location_kwargs)
+            location = self.get_conn().create_location_nfs(**create_location_kwargs)
         elif typ == "efs":
-            location = self.get_conn().create_loction_efs(**create_location_kwargs)
+            location = self.get_conn().create_location_efs(**create_location_kwargs)
         else:
             raise AirflowException(f"Invalid location type: {typ}")
         self._refresh_locations()
