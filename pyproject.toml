@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "apache-airflow-providers-amazon"
+version = "2.4.1"
+description = "A SparkDs patched version of the Airflow provider package for AWS."
+authors = [
+    "Apache Airflow team.",
+    "Mark Welsh mark.welsh@sparktx.com",
+]
+packages = [
+    {include = "airflow"}
+]
